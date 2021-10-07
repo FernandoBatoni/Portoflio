@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Fernando Batoni Areias</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- <a href="#contact">Contact</a> -->
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/home-pic.png" alt="">
+        <h3> Fernando <span>Batoni Areias</span> </h3>
+        <p><span class="typing-text"> Front End Dev</span> </p>
+        <a href="#about" class="btn">Sobre mim</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/about-pic.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3> Olá! Meu nome é <span> Fernando Batoni Areias </span> </h3>
+            <p class="info">Olá! Me chamo Fernando Batoni Areias, sou português e resido em Sorocaba. <br> Altamente atento aos detalhes, 
+                procuro ter <span> precisão e consistência em meu desempenho individual diário, </span> contribuições da equipe e 
+                conclusão de tarefas. Além disso, ofereço solução de problemas, colaboração, flexibilidade de agendamento 
+                e estou aberto para aprender tudo e sempre melhorar.</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> Idade: </span> 20 </p>
+                    <p> <span> Gênero: </span> Masculino </p>
+                    <p> <span> Experiência  : </span> 1 ano </p>
+                </div>
+                <div class="box">
+                    <p> <span> Idiomas : </span> Português / Inglês </p>
+                    <p> <span> Telefone : </span> +55 (15)98136-6426 </p>
+                    <p> <span> Endereço : </span> Sorocaba, São Paulo - 18085766</p>
+                </div>
+            </div>
+            <a href="/images/myw3schoolsimage.jpg" download>
+              </a>
+            <a href="/images/CV_FernandoBatoni_PT.pdf" class="btn" download="CV_FernandoBatoni">Download CV</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- contact section starts  -->
+
+<!--
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <input type="text" placeholder="Assunto" class="box">
+
+            <textarea placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="Enviar">
+
+        </form>
+
+    </div>
+
+</section>
+-->
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<!-- <div class="footer"> created by <span> mr. web designer </span> | all rights reserved! </div> -->
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['Front end Developer', 'Web Designer', 'Web Developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
